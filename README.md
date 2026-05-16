@@ -31,6 +31,6 @@ A console-based Employee Management System built using Hibernate ORM and Postgre
 
 PostgreSQL
 
-## Author
+## Developed By
 
-Mithil Dhure
+[Mithil Dhure](https://www.linkedin.com/in/mithil-dhure/)
