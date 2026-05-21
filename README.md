@@ -1,6 +1,6 @@
 # Employee Management System (Hibernate)
 
-A console-based Employee Management System built using Hibernate ORM and PostgreSQL, Built only for understanding backend betterm specially Bi-directional Mapping Associations.
+A console-based Employee Management System built using Hibernate ORM and PostgreSQL, Built only for understanding backend betterm specially Bi-directional Mapping Associations. v2 will Contain Second Level Cache Memory
 
 ## Features
 
