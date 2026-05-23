@@ -1,6 +1,7 @@
 # Employee Management System (Hibernate)
 
-A console-based Employee Management System built using Hibernate ORM and PostgreSQL, Built only for understanding backend betterm specially Bi-directional Mapping Associations. v2 will Contain Second Level Cache Memory
+A console-based Employee Management System built using Hibernate ORM and PostgreSQL, Built only for understanding backend betterm specially Bi-directional Mapping Associations. All operations are done
+on Console Through Scanner Class.
 
 ## Features
 
@@ -26,10 +27,17 @@ A console-based Employee Management System built using Hibernate ORM and Postgre
 - HQL
 - CRUD Operations
 - Authentication
+- Caching
 
 ## Database
 
 PostgreSQL
+
+## Dependencies
+
+- PostgreSQL 42.6.0
+- Hibernate Core 5.6.15
+- Hibernate EhCache 5.6.15
 
 ## Developed By
 

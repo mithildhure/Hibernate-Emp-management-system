@@ -2,7 +2,7 @@ package com.proj.hib.entity;
 
 import java.util.List;
 
-import javax.persistence.CascadeType;
+import javax.persistence.Cacheable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,6 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "department_details")
+@Cacheable
 public class Department {
 
 	@Id

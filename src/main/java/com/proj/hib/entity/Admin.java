@@ -1,5 +1,6 @@
 package com.proj.hib.entity;
 
+import javax.persistence.Cacheable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "admin_details")
+@Cacheable
 public class Admin {
 
 	@Id

@@ -7,16 +7,18 @@
 	<persistence-unit name="proj"
 		transaction-type="RESOURCE_LOCAL">
 
+		<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+
 		<properties>
 			<!-- DB -->
 			<property name="javax.persistence.jdbc.driver"
 				value="org.postgresql.Driver" /> <!-- DB Driver -->
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:postgresql://localhost:****/db_name" /> <!-- DB Name -->
+				value="jdbc:postgresql://localhost:5432/emp_management" /> <!-- DB Name -->
 			<property name="javax.persistence.jdbc.user"
-				value="****" /> <!-- DB User -->
+				value="postgres" /> <!-- DB User -->
 			<property name="javax.persistence.jdbc.password"
-				value="****" /> <!-- DB Password -->
+				value="root" /> <!-- DB Password -->
 
 			<!-- Dialect -->
 			<property name="hibernate.dialect"
@@ -24,8 +26,15 @@
 			<property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
 
 			<!-- Query -->
-			<property name="hibernate.show_sql" value="true" /> <!-- Show SQL in console -->
+			<property name="hibernate.show_sql" value="false" /> <!-- Show SQL in console -->
 			<property name="hibernate.format_sql" value="true" /> <!-- Show SQL formatted -->
+
+			<!-- Enable Second Level Cache Memory -->
+			<property name="hibernate.cache.use_second_level_cache"
+				value="true" />
+			<property name="hibernate.cache.region.factory_class"
+				value="org.hibernate.cache.ehcache.internal.EhcacheRegionFactory" />
+
 		</properties>
 
 	</persistence-unit>

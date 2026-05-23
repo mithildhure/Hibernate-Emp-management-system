@@ -7,6 +7,8 @@
 	<persistence-unit name="proj"
 		transaction-type="RESOURCE_LOCAL">
 
+		<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+
 		<properties>
 			<!-- DB -->
 			<property name="javax.persistence.jdbc.driver"
@@ -26,6 +28,13 @@
 			<!-- Query -->
 			<property name="hibernate.show_sql" value="false" /> <!-- Show SQL in console -->
 			<property name="hibernate.format_sql" value="true" /> <!-- Show SQL formatted -->
+
+			<!-- Enable Second Level Cache Memory -->
+			<property name="hibernate.cache.use_second_level_cache"
+				value="true" />
+			<property name="hibernate.cache.region.factory_class"
+				value="org.hibernate.cache.ehcache.internal.EhcacheRegionFactory" />
+
 		</properties>
 
 	</persistence-unit>
